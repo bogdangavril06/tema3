@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Specificity Game</title>
+    <link rel="stylesheet" href="specificity_style.css" />
+    <style>
+      p {
+        font-size: 1rem;
+        font-family: Georgia, serif;
+        line-height: 1.4;
+        padding: 4px 0;
+      }
+
+      .info {
+        color: steelblue;
+        font-size: 1.25rem;
+        background-color: #e8f4fd;
+        padding: 8px 14px;
+        border-left: 5px solid steelblue;
+        font-family: Arial, sans-serif;
+      }
+
+      #warning {
+        color: darkred;
+        font-size: 0.8rem;
+        font-style: italic;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        border: 2px dashed darkred;
+        padding: 10px;
+        background-color: #fff0f0;
+        font-family: "Courier New", monospace;
+      }
+
+      #warning.info {
+        color: darkorange;
+        background-color: #fff7e0;
+        border: 2px solid darkorange;
+        font-size: 1.1rem;
+        font-style: normal;
+        letter-spacing: 0.03em;
+      }
+      h1 {
+        color: blue;
+        font-style: italic;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="card.html">Card</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="chatbot.html">Chatbot</a></li>
+          <li><a href="specificity.html">Specificity</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>title1</h1>
+    <p style="color: red">Paragraph A</p>
+
+    <p class="info">Paragraph B</p>
+
+    <p id="warning">Paragraph C</p>
+
+    <p class="info" id="warning">Paragraph D</p>
+  </body>
+</html>

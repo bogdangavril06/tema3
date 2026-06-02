@@ -1,0 +1,15 @@
+For paragraph A - css styling comes from element selector - color red coming from inline css which is more powerfull , 
+font size of 1 rem , font family "Georgia", serif , line height and padding
+For paragraph B - css styling comes primarily from class selector ".info" - color steelblue
+font size of 1.25rem , background color, padding , border left and font family and line height from the element selector.
+For paragraph C - css styling comes primarily from id selector "warning" - color darkred, font-size of 0.8rem, font style, text transform 
+to uppercase, letter spacing, border , padding, background color and font-family and line-height from the element selector.
+For paragraph D - css styling comes primarily from warning.info - color , background-color, border , font-size, font-style and letter spacing,
+from #warning - padding, font-family, text transform and  from element selector - line height 
+Hierarchy - #warning.info - #warning - .info - p -> takes whatever it can from the strongest and moves down to the less powerfull selectors.
+Paragraph D takes color from #warning.info since it's the strongest selector and font-family from  #warning since #warning.info doesen't have this and that's the next strongest selector.
+
+
+
+When creating the h1 title1 css in style.css it applies the styling to that h1 element, when adding css in the style tag in the head section of the html file it overrides the styling coming from
+ the style.css file

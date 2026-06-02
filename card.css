@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #0f172a;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+nav {
+  border-bottom: 2px solid hsl(221, 100%, 58%);
+  border-radius: 10px;
+  max-width: fit-content;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  padding: 1rem 4rem;
+}
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+  padding: 0;
+}
+nav a {
+  color: rgb(183, 169, 255);
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #763bff;
+}
+
+.card-container {
+  min-height: calc(100vh - 120px);
+
+  display: grid;
+  place-items: center;
+
+  padding: 2rem;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+
+  background-color: #111827;
+
+  border: 1px solid #334155;
+
+  border-radius: 24px;
+
+  padding: 3rem 2rem;
+
+  display: grid;
+  gap: 1.5rem;
+
+  text-align: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin: 0 auto;
+
+  border: 4px solid #8b5cf6;
+}
+
+.card h1 {
+  font-size: 2rem;
+}
+
+.role {
+  color: #a78bfa;
+  font-weight: bold;
+}
+
+.description {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+}
+#main-name {
+  letter-spacing: 1px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  padding: 0.9rem 1.3rem;
+
+  border-radius: 999px;
+
+  text-decoration: none;
+
+  color: white;
+
+  background: linear-gradient(135deg, #7c3aed, #3b82f6);
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn img {
+  width: 20px;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+}

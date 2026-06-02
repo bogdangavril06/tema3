@@ -1,0 +1,203 @@
+/* Desktop - 1 */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #0f172a;
+
+/* Rectangle 2 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 646px;
+height: 836px;
+left: 741px;
+top: 94px;
+
+background: #111827;
+border-radius: 25px;
+
+/* Rectangle 1 */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 608px;
+height: 836px;
+left: 169.5px;
+top: 94px;
+
+background: linear-gradient(180deg, #7c3aed 0%, #472187 57.69%, #180042 94.71%);
+border-radius: 25px;
+
+/* Welcome Back */
+
+position: absolute;
+width: 448px;
+height: 87px;
+left: 257px;
+top: 286px;
+
+/* Heading */
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 87px;
+
+color: #ffffff;
+
+/* image 1 */
+
+position: absolute;
+width: 421px;
+height: 419px;
+left: 270px;
+top: 397px;
+
+background: url(image.png);
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 398px;
+height: 60px;
+left: 884px;
+top: 656px;
+
+background: #1e293b;
+border-radius: 30px;
+
+/* Rectangle 4 */
+
+position: absolute;
+width: 398px;
+height: 60px;
+left: 884px;
+top: 512px;
+
+background: #1e293b;
+border-radius: 30px;
+
+/* Email */
+
+position: absolute;
+width: 92px;
+height: 49px;
+left: 884px;
+top: 463px;
+
+/* Body */
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+
+color: #ffffff;
+
+/* Password */
+
+position: absolute;
+width: 162px;
+height: 49px;
+left: 884px;
+top: 607px;
+
+/* Body */
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+line-height: 49px;
+
+color: #ffffff;
+
+/* Log in */
+
+position: absolute;
+width: 187px;
+height: 87px;
+left: 989px;
+top: 286px;
+
+/* Heading */
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 87px;
+
+color: #ffffff;
+
+/* Component 1 */
+
+position: absolute;
+width: 249px;
+height: 63px;
+left: 815px;
+top: 784px;
+
+/* Rectangle 5 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(90deg, #7c3aed 0%, #372187 48.56%, #2c00cc 95.19%);
+border-radius: 999px;
+
+/* Login */
+
+position: absolute;
+left: 30.92%;
+right: 30.92%;
+top: 11.11%;
+bottom: 11.11%;
+
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+
+color: #ffffff;
+
+/* Component 2 */
+
+position: absolute;
+width: 249px;
+height: 63px;
+left: 1102px;
+top: 784px;
+
+/* Rectangle 5 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+background: linear-gradient(90deg, #7c3aed 0%, #372187 48.56%, #2c00cc 95.19%);
+border-radius: 999px;
+
+/* Login */
+
+position: absolute;
+left: 21.29%;
+right: 21.29%;
+top: 11.11%;
+bottom: 11.11%;
+
+font-family: "Nunito Sans";
+font-style: normal;
+font-weight: 800;
+font-size: 36px;
+line-height: 49px;
+
+color: #ffffff;

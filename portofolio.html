@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofoliu Gavril Bogdan</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header>
+      <nav>
+        <a href="index.html" class="logo">Portfolio</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="data.html">Data</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="card.html">Card</a></li>
+          <li><a href="cv.html">CV</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="overview.html">Overview</a></li>
+          <li><a href="chatbot.html">Chatbot</a></li>
+          <li><a href="specificity.html">Specificity</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="title-container">
+      <h1 class="big-title">
+        Bun venit !<br />
+        Acesta este portofoliul meu !
+      </h1>
+    </div>
+    <main id="main-content">
+      <h1 style="text-align: center; margin-top: 20px; color: #a5b4fc">
+        Managementul Portofoliului Meu
+      </h1>
+
+      <section
+        aria-labelledby="form-heading"
+        style="
+          border: 1px solid #4f46e5;
+          border-radius: 20px;
+          padding: 30px;
+          margin: 20px auto;
+          max-width: 800px;
+          background-color: #0b0f19;
+        "
+      >
+        <h2 id="form-heading" style="color: #fff; text-align: center">
+          Adaugă un Proiect Nou
+        </h2>
+
+        <form
+          id="project-form"
+          novalidate
+          style="display: flex; flex-direction: column; gap: 15px"
+        >
+          <fieldset
+            style="
+              border: 1px solid #312e81;
+              padding: 20px;
+              border-radius: 10px;
+            "
+          >
+            <legend style="color: #a5b4fc; padding: 0 10px">
+              Detalii Tehnice Proiect
+            </legend>
+
+            <div
+              class="form-group"
+              style="display: flex; flex-direction: column; margin-bottom: 10px"
+            >
+              <label for="project-name" style="color: #fff; margin-bottom: 5px"
+                >Numele Proiectului <span aria-hidden="true">*</span></label
+              >
+              <input
+                type="text"
+                id="project-name"
+                name="projectName"
+                required
+                aria-describedby="name-error"
+                style="
+                  background: #111827;
+                  border: 1px solid #4b5563;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              />
+              <span
+                class="error-message"
+                id="name-error"
+                aria-live="polite"
+                style="
+                  color: #ef4444;
+                  font-size: 0.85rem;
+                  margin-top: 4px;
+                  min-height: 1.2rem;
+                "
+              ></span>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; flex-direction: column; margin-bottom: 10px"
+            >
+              <label for="project-desc" style="color: #fff; margin-bottom: 5px"
+                >Descriere Proiect <span aria-hidden="true">*</span></label
+              >
+              <textarea
+                id="project-desc"
+                name="projectDesc"
+                rows="3"
+                required
+                aria-describedby="desc-error"
+                style="
+                  background: #111827;
+                  border: 1px solid #4b5563;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                  resize: vertical;
+                "
+              ></textarea>
+              <span
+                class="error-message"
+                id="desc-error"
+                aria-live="polite"
+                style="
+                  color: #ef4444;
+                  font-size: 0.85rem;
+                  margin-top: 4px;
+                  min-height: 1.2rem;
+                "
+              ></span>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; flex-direction: column; margin-bottom: 10px"
+            >
+              <label for="project-url" style="color: #fff; margin-bottom: 5px"
+                >Link Proiect (URL) <span aria-hidden="true">*</span></label
+              >
+              <input
+                type="url"
+                id="project-url"
+                name="projectUrl"
+                placeholder="https://github.com/..."
+                required
+                aria-describedby="url-error"
+                style="
+                  background: #111827;
+                  border: 1px solid #4b5563;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              />
+              <span
+                class="error-message"
+                id="url-error"
+                aria-live="polite"
+                style="
+                  color: #ef4444;
+                  font-size: 0.85rem;
+                  margin-top: 4px;
+                  min-height: 1.2rem;
+                "
+              ></span>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; flex-direction: column; margin-bottom: 10px"
+            >
+              <label for="project-tech" style="color: #fff; margin-bottom: 5px"
+                >Tehnologie Principală <span aria-hidden="true">*</span></label
+              >
+              <select
+                id="project-tech"
+                name="projectTech"
+                required
+                aria-describedby="tech-error"
+                style="
+                  background: #111827;
+                  border: 1px solid #4b5563;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              >
+                <option value="">-- Selectează o opțiune --</option>
+                <option value="C++">C++</option>
+                <option value="Python">Python</option>
+                <option value="HTML/CSS">HTML5 & CSS3</option>
+                <option value="JavaScript">Vanilla JavaScript</option>
+              </select>
+              <span
+                class="error-message"
+                id="tech-error"
+                aria-live="polite"
+                style="
+                  color: #ef4444;
+                  font-size: 0.85rem;
+                  margin-top: 4px;
+                  min-height: 1.2rem;
+                "
+              ></span>
+            </div>
+
+            <div
+              class="form-group"
+              style="display: flex; flex-direction: column; margin-bottom: 15px"
+            >
+              <label for="project-date" style="color: #fff; margin-bottom: 5px"
+                >Data Finalizării <span aria-hidden="true">*</span></label
+              >
+              <input
+                type="date"
+                id="project-date"
+                name="projectDate"
+                required
+                aria-describedby="date-error"
+                style="
+                  background: #111827;
+                  border: 1px solid #4b5563;
+                  color: white;
+                  padding: 10px;
+                  border-radius: 5px;
+                "
+              />
+              <span
+                class="error-message"
+                id="date-error"
+                aria-live="polite"
+                style="
+                  color: #ef4444;
+                  font-size: 0.85rem;
+                  margin-top: 4px;
+                  min-height: 1.2rem;
+                "
+              ></span>
+            </div>
+
+            <div style="display: flex; gap: 15px; margin-top: 10px">
+              <button
+                type="submit"
+                style="
+                  background: #4f46e5;
+                  color: white;
+                  border: none;
+                  padding: 12px 20px;
+                  border-radius: 30px;
+                  cursor: pointer;
+                  font-weight: bold;
+                  flex: 2;
+                "
+              >
+                Adaugă Proiect
+              </button>
+              <button
+                type="reset"
+                id="reset-btn"
+                style="
+                  background: #374151;
+                  color: white;
+                  border: none;
+                  padding: 12px 20px;
+                  border-radius: 30px;
+                  cursor: pointer;
+                  flex: 1;
+                "
+              >
+                Reset
+              </button>
+            </div>
+          </fieldset>
+        </form>
+      </section>
+
+      <section
+        aria-labelledby="table-heading"
+        style="margin: 40px auto; max-width: 900px; padding: 0 20px"
+      >
+        <h2 id="table-heading" style="color: #fff; text-align: center">
+          Proiecte Înregistrate
+        </h2>
+
+        <div
+          style="
+            width: 100%;
+            overflow-x: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            border: 1px solid #312e81;
+          "
+        >
+          <table
+            id="projects-table"
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              background: #0b0f19;
+              color: white;
+            "
+          >
+            <caption style="padding: 10px; color: #a5b4fc; font-style: italic">
+              Listă cu proiectele adăugate din formular
+            </caption>
+            <thead>
+              <tr style="background: #1e1b4b">
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Miniatură
+                </th>
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Nume
+                </th>
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Descriere
+                </th>
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Tehnologie
+                </th>
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Dată
+                </th>
+                <th
+                  scope="col"
+                  style="
+                    padding: 12px;
+                    text-align: left;
+                    border-bottom: 2px solid #312e81;
+                  "
+                >
+                  Link
+                </th>
+              </tr>
+            </thead>
+            <tbody id="table-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="portofolio.js" defer></script>
+    <footer>
+      &copy; Gavril Bogdan Macsimilian | 2026 | Universitatea de Vest
+    </footer>
+  </body>
+</html>
